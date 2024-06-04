@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacotes de Viagens</title>
+    <link rel="stylesheet" href="css/pacote.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/login.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+<body>
+
+
+    <!-- Cabeçalho -->
+    <header>
+        <div id="logo">
+            <img src="img/logo.jpg" alt="Logo" width="100">
+        </div>
+
+        <div class="search-container">
+            <h2 class="site-title">Pacotes de Viagens</h2>
+            <input type="text" id="searchInput" placeholder="Buscar por cidade...">
+            <input type="text" id="dataIda" placeholder="Retirada">
+            <input type="text" id="dataVolta" placeholder="Devolução">
+            <button onclick="searchPackages()">Buscar</button>
+
+            <a href="login.html" class="login-cadastro">Login</a>
+
+        </div>
+    </header>
+    
+
+    <!-- Menu de Navegação -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="passagens_aereas.html">Passagens Aéreas</a></li>
+            <li><a href="passagens_onibus.html">Passagens de Ônibus</a></li>
+            <li><a href="Pacotes_de_viagem.html">Pacotes de Viagens</a></li>
+            <li><a href="Aluguel_de_carros.html">Aluguel de Carros</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <section id="pacotes">
+        <div class="pacote">
+            <div class="pacote-info">
+                <img src="img/Chevrolet-Cruze-Sedan.jpg" alt="cruze">
+                <h3>Chevrolet Cruze Sedan</h3>
+                <p>Até 5 pessoas</p>
+                <p>Ar-condicionado</p>
+                <p>Cancelamento gratis até 48h</p>
+                <p>Km ilimitada</p>
+                <p>Preço: R$ 240/dia</p>
+            </div>
+        </div>
+        
+            <div class="pacote">
+                <div class="pacote-info">
+                    <img src="img/ford.jpg" alt="Ford Mustang">
+                    <h3>Ford Mustang</h3>
+                    <p>Capacidade: 4 pessoas</p>
+                    <p>Transmissão automática</p>
+                    <p>Ar-condicionado</p>
+                    <p>Km ilimitada</p>
+                    <p>Preço: R$ 300/dia</p>
+                </div>
+            </div>
+            
+            <div class="pacote">
+                <div class="pacote-info">
+                    <img src="img/bmw.jpg" alt="BMW 3 Series">
+                    <h3>BMW 3 Series</h3>
+                    <p>Capacidade: 5 pessoas</p>
+                    <p>Transmissão automática</p>
+                    <p>GPS integrado</p>
+                    <p>Km ilimitada</p>
+                    <p>Preço: R$ 190/dia</p>
+                </div>
+            </div>
+        
+            <div class="pacote">
+                <div class="pacote-info">
+                    <img src="img/audi.jpg" alt="Audi A4">
+                    <h3>Audi A4</h3>
+                    <p>Capacidade: 5 pessoas</p>
+                    <p>Transmissão automática</p>
+                    <p>Sistema de som premium</p>
+                    <p>Km ilimitada</p>
+                    <p>Preço: R$ 250/dia</p>
+                </div>
+            </div>
+        
+            <div class="pacote">
+                <div class="pacote-info">
+                    <img src="img/toyota-corolla.jpg" alt="Toyota Corolla">
+                    <h3>Toyota Corolla</h3>
+                    <p>Capacidade: 5 pessoas</p>
+                    <p>Transmissão automática</p>
+                    <p>Assistência de frenagem de emergência</p>
+                    <p>Km ilimitada</p>
+                    <p>Preço: R$ 220/dia</p>
+                </div>
+            </div>
+
+            <div class="pacote">
+                <div class="pacote-info">
+                    <img src="img/min-van.pg.png" alt="mini van">
+                    <h3>mini van</h3>
+                    <p>Capacidade: 8 pessoas</p>
+                    <p>Cambio e piloto automática</p>
+                    <p>3 malas grandes e 2 pequenas</p>
+                    <p>Km ilimitada</p>
+                    <p>Preço: R$ 350/dia</p>
+                </div>
+            </div>
+
+            <div class="pacote">
+                <div class="pacote-info">
+                    <img src="img/mobi.jpg" alt="fiat mobi">
+                    <h3>fiat mobi</h3>
+                    <p>Capacidade: 5 pessoas</p>
+                    <p>Cambio manual 5 marchas</p>
+                    <p>porta-malas 200 litros</p>
+                    <p>Km ilimitada</p>
+                    <p>Preço: R$ 120/dia</p>
+                </div>
+            </div>
+            <div class="pacote">
+                <div class="pacote-info">
+                    <img src="img/fiat-argo.jpg" alt="fiat argo">
+                    <h3>fiat argo</h3>
+                    <p>Capacidade: 5 pessoas</p>
+                    <p>Cambio manual 5 marchas</p>
+                    <p>porta-malas 300 litros</p>
+                    <p>Km ilimitada</p>
+                    <p>Preço: R$ 130/dia</p>
+                </div>
+            </div>
+        </section>
+        
+    <!-- Rodapé -->
+    <footer>
+        <section>
+            <h3>Contato:</h3>
+            <p>Email: reisen@agenciadeviagens.com</p>
+            <p>Telefone: +55 11912345678</p>
+        </section>
+        <section>
+            <h3>Siga nossa agência nas redes sociais!</h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </section>
+    </footer>
+
+</body>
+</html>
+<script>
+    $(function(){
+        $("#dataIda, #dataVolta").datepicker();
+    })
+</script>

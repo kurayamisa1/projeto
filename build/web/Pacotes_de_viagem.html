@@ -1,0 +1,170 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacotes de Viagens</title>
+    <link rel="stylesheet" href="css/pacote.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/login.css">
+
+    <!-- Adicionando jQuery e jQuery UI para o calendário -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div id="logo">
+            <img src="img/logo.jpg" alt="Logo" width="100">
+        </div>
+        
+        <div class="search-container">
+            <h2 class="site-title">Pacotes de Viagens</h2>
+            <input type="text" id="searchInput" placeholder="Buscar por cidade...">
+            <input type="text" id="dataIda" placeholder="Data de ida">
+            <input type="text" id="dataVolta" placeholder="Data de volta">
+            <button onclick="searchPackages()">Buscar</button>
+            
+
+        </div>         
+           <a href="login.html" class="login-cadastro">Login</a>
+
+    </header>
+
+    <!-- Menu de Navegação -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="passagens_aereas.html">Passagens Aéreas</a></li>
+            <li><a href="passagens_onibus.html">Passagens de Ônibus</a></li>
+            <li><a href="Pacotes_de_viagem.html">Pacotes de Viagens</a></li>
+            <li><a href="Aluguel_de_carros.html">Aluguel de Carros</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <section id="pacotes">
+        <div class="pacote">
+            <div class="pacote-info">
+                <img src="img/paris.jpg" alt="Paris">
+                <h3>Paris, França</h3>
+                <p>5 dias de hospedagem</p>
+                <p>Aguamarinha Pousada</p>
+                <p>Preço por pessoa</p>
+                <p>Incluso: Buffet de café da manhã e atrações turísticas</p>
+                <p>R$ 1.258</p>
+            </div>
+        </div>
+        
+        <div class="pacote">
+            <div class="pacote-info">
+                <img src="img/orlando.jpg" alt="Orlando">
+                <h3>Orlando, EUA</h3>
+                <p>7 dias de hospedagem</p>
+                <p>Disney Resort</p>
+                <p>Preço por pessoa</p>
+                <p>Incluso: Acesso aos parques temáticos e transporte</p>
+                <p>R$ 2.500</p>
+            </div>
+        </div>
+        <div class="pacote">
+            <div class="pacote-info">
+                <img src="img/orlando.jpg" alt="Orlando">
+                <h3>Orlando, EUA</h3>
+                <p>7 dias de hospedagem</p>
+                <p>Disney Resort</p>
+                <p>Preço por pessoa</p>
+                <p>Incluso: Acesso aos parques temáticos e transporte</p>
+                <p>R$ 2.500</p>
+            </div>
+        </div>
+
+        <div class="pacote">
+            <div class="pacote-info">
+                <img src="img/orlando.jpg" alt="Orlando">
+                <h3>Orlando, EUA</h3>
+                <p>7 dias de hospedagem</p>
+                <p>Disney Resort</p>
+                <p>Preço por pessoa</p>
+                <p>Incluso: Acesso aos parques temáticos e transporte</p>
+                <p>R$ 2.500</p>
+            </div>
+        </div>
+        
+        <div class="pacote">
+            <div class="pacote-info">
+                <img src="img/tokyo.jpg" alt="Tóquio">
+                <h3>Tóquio, Japão</h3>
+                <p>7 dias de hospedagem</p>
+                <p>Sakura Hotel</p>
+                <p>Preço por pessoa</p>
+                <p>Incluso: Passeios pela cidade e guia turístico</p>
+                <p>R$ 3.000</p>
+            </div>
+        </div>
+
+        <div class="pacote">
+            <div class="pacote-info">
+                <img src="img/londonn.jpg" alt="Londres">
+                <h3>Londres, Reino Unido</h3>
+                <p>6 dias de hospedagem</p>
+                <p>London Hotel</p>
+                <p>Preço por pessoa</p>
+                <p>Incluso: City tour e ingressos para museus</p>
+                <p>R$ 2.200</p>
+            </div>
+        </div>
+
+        <div class="pacote">
+            <div class="pacote-info">
+                <img src="img/roma.jpg" alt="Roma">
+                <h3>Roma, Itália</h3>
+                <p>7 dias de hospedagem</p>
+                <p>Roma Resort</p>
+                <p>Preço por pessoa</p>
+                <p>Incluso: Excursões históricas e jantares temáticos</p>
+                <p>R$ 2.800</p>
+            </div>
+        </div>
+
+        <div class="pacote">
+            <div class="pacote-info">
+                <img src="img/sydney.jpg" alt="Sydney">
+                <h3>Sydney, Austrália</h3>
+                <p>8 dias de hospedagem</p>
+                <p>Sydney Beach Resort</p>
+                <p>Preço por pessoa</p>
+                <p>Incluso: Passeios de barco e surfe</p>
+                <p>R$ 3.500</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <section>
+            <h3>Contato:</h3>
+            <p>Email: reisen@agenciadeviagens.com</p>
+            <p>Telefone: +55 11912345678</p>
+        </section>
+        <section>
+            <h3>Siga nossa agência nas redes sociais!</h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </section>
+    </footer>
+
+</body>
+</html>
+<script>
+    $(function(){
+        $("#dataIda, #dataVolta").datepicker();
+    })
+</script>

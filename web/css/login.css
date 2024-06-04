@@ -1,0 +1,155 @@
+/* Estilo para o formulário de login e cadastro */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+
+
+/* Conteúdo do formulário de login e cadastro */
+.login-form {
+    background-color: #ffffff;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #FF6F61;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Ajustando o tamanho dos campos de entrada */
+.login-form input[type="text"],
+.login-form input[type="email"],
+.login-form input[type="tel"],
+.login-form input[type="password"],
+.login-form input[type="date"],
+.login-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+/* Estilizando os botões */
+.login-form button[type="submit"],
+.botao-entrar,
+.login-cadastro {
+    background-color: #FF6F61;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.login-form button[type="submit"]:hover,
+.botao-entrar:hover,
+.login-cadastro:hover {
+    background-color: #FF4D3D;
+}
+
+
+/* Estilizando mensagens de feedback */
+.mensagem {
+    color: rgb(52, 145, 199);
+    margin-bottom: 10px;
+}
+
+.campo-grupo {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.campo-grupo label {
+    width: auto;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.campo-grupo select {
+    width: 60%;
+    margin-right: 20px;
+}
+
+
+/*area de compra-botao de copiar codigo pix*/
+#copiarChavePix {
+    background-color: #FF6F61;
+    color: #fff;
+    border: none;
+    padding: 5px 10px; 
+    border-radius: 5px;
+    font-size: 0.8em; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: -5px; 
+}
+
+#copiarChavePix:hover {
+    background-color: #FF4D3D;
+}
+
+#chavePixLabel {
+    width: calc(100% - 75px);
+}
+
+.highlight-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFEBE6;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 2px solid #FF6F61;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.highlight-item label {
+    font-weight: bold;
+    color: #FF6F61;
+    margin-right: 10px;
+    margin-top: 11px;
+}
+
+.highlight {
+    font-size: 0.90em;
+    font-weight: bold;
+    color: #FF4D3D;
+    background-color: #FFF3F0;
+    padding: 5px 10px;
+    border: 2px solid #FF6F61;
+    border-radius: 3px;
+    text-align: center;
+}
+.mensagem.erro {
+    color: #ff0000; 
+    font-size: 14px;
+    margin-top: 5px; 
+}

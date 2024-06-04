@@ -1,0 +1,101 @@
+.site-title {
+    font-size: 1.5em; /* Tamanho do título reduzido */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+#logo {
+    float:left;
+    margin-right: 14px; /* Ajuste conforme necessário */
+}
+
+/* Busca de Destinos */
+#busca {
+    background-color: #f9f9f900;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/*#busca h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffffff;
+} */
+
+
+.busca-form {
+    margin-bottom: 20px;
+    
+}
+
+.busca-form input[type="text"] {
+    padding: 10px;
+    margin-right: 20px;
+    width: 20%; /* Largura do campo de busca */
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.busca-form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #FF6F61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.busca-form button[type="submit"]:hover {
+    background-color: #FF4831;
+}
+#destinos {
+    padding: 20px;
+}
+
+#destinos h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #FF6F61;
+}
+
+#destinos ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.destino-item {
+    background-color: #ffffff71;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.destino-imagem {
+    width: 100px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.destino-info h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.destino-info p {
+    margin: 5px 0;
+}
+/* Estilo para o campo de calendário */
+#calendario {
+    padding: 10px;
+    width: 20%; /* Largura */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-right: 10px; /* Espaçamento à direita */
+}
+

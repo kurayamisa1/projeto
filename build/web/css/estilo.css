@@ -1,0 +1,194 @@
+
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/viagem.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+.header-container {
+    position: relative;
+}
+
+.login-cadastro {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: #FF6F61;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* cabeçalho */
+header {
+    background-color: #9bcae06c;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1em;
+}
+
+/* menu de navegação */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #3333338c;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;  
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.titulo-desc {
+    color: #fc9090; /* Cor do texto branca */
+    text-align: left; /* Centralizar o texto */
+}
+
+
+/* conteúdo principal */
+/* Promoções */
+#promocoes {
+    background-color: #f9f9f98f;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#promocoes h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #FF6F61;
+}
+
+.cidade {
+    width: calc(30.33% - 30px); /* 33.333% da largura da seção - margem */
+    margin-bottom: 20px;
+    display: inline-block; /* Mostrar as caixas em linha */
+    vertical-align: top; /* Alinhar as caixas ao topo */
+    box-sizing: border-box; /* Incluir padding e borda no cálculo da largura */
+    margin-right: auto; /* Centralizar as caixas horizontalmente */
+    margin-left: auto; /* Centralizar as caixas horizontalmente */
+}
+
+.preco-promocional {
+    color: #FF6F61;
+    font-weight: bold;
+}
+
+
+.cidade-info {
+    width: 87%; /* Definindo a largura das caixas  */
+
+    background-color: #ffffff71;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+    text-align: center;
+    height: 93%; /* Garantir que todas as caixas tenham a mesma altura */
+}
+
+.cidade-imagem img {
+    max-width: 100%; /* Garantir que a imagem não ultrapasse o contêiner */
+    max-height: 100%; /* Garantir que a imagem não ultrapasse o contêiner */
+    border-radius: 5px;
+
+}
+
+
+.botao-comprar {
+    background-color: #FF6F61;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.botao-comprar:hover {
+    background-color: #FF4D3D;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.botao-comprar:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+
+/* rodapé/redes sociais */
+footer {
+    background-color: #3333338c;
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+}
+
+footer section {
+    margin-bottom: 15px;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer ul li:last-child {
+    margin-right: 0;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #ccc;
+}
+
+

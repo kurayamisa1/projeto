@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passagens de Ônibus</title>
+    <link rel="stylesheet" href="css/estilo.css"> <!-- arquivo CSS principal -->
+    <link rel="stylesheet" href="css/passagens.css">
+    <link rel="stylesheet" href="css/login.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+
+    <header>
+        <!-- Logo pequeno -->
+<div id="logo">
+    <img src="img/logo.jpg" alt="Logo" width="100">
+</div>
+        
+<!-- Formulário de busca -->
+    <div class="busca-form">
+        <h2 class="site-title">Destinos de Ônibus</h2>
+        <label for="origem">Origem:</label>
+        <input type="text" id="origem" name="origem" placeholder="Local de origem">
+        <label for="destino">Destino:</label>
+        <input type="text" id="destino" name="destino" placeholder="Local de destino">
+
+        <label for="tipo_viagem">Tipo de viagem:</label>
+        <select id="tipo_viagem" name="tipo_viagem">
+            <option value="ida_e_volta">Ida e Volta</option>
+            <option value="somente_ida">Somente Ida</option>
+            <option value="somente_volta">Somente Volta</option>
+        </select>
+
+        <button type="submit" class="botao">Buscar</button>
+
+        <a href="login.html" class="login-cadastro">Login</a>
+
+        </div>
+    </header>
+
+
+
+<!-- Menu de Navegação -->
+<nav>
+    <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="passagens_aereas.html">Passagens Aéreas</a></li>
+        <li><a href="passagens_onibus.html">Passagens de Ônibus</a></li>
+        <li><a href="Pacotes_de_viagem.html">Pacotes de Viagens</a></li>
+        <li><a href="Aluguel_de_carros.html">Aluguel de Carros</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+    </ul>
+</nav>
+
+
+<!-- Conteúdo da página -->
+<section id="destinos">
+    <h2>Destinos de Ônibus no Brasil</h2>
+    <ul>
+        <li>
+            <div class="destino-item">
+                <img src="img/sao-paulo.jpg" alt="São Paulo" class="destino-imagem">
+                <div class="destino-info">
+                    <h3>São Paulo, SP</h3>
+                    <p><strong>Preço:</strong> $70</p>
+                    <button class="botao-comprar">Comprar</button> 
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="destino-item">
+                <img src="img/rio_de_janeiro.jpg" alt="Rio de Janeiro" class="destino-imagem">
+                <div class="destino-info">
+                    <h3>Rio de Janeiro, RJ</h3>
+                    <p><strong>Preço:</strong> $60</p>
+                    <button class="botao-comprar">Comprar</button> 
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="destino-item">
+                <img src="img/bahia.jpg" alt="Salvador" class="destino-imagem">
+                <div class="destino-info">
+                    <h3>Salvador, BA</h3>
+                    <p><strong>Preço:</strong> $70</p>
+                    <button class="botao-comprar">Comprar</button> 
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="destino-item">
+                <img src="img/brasilia.jpg" alt="Brasília" class="destino-imagem">
+                <div class="destino-info">
+                    <h3>Brasília, DF</h3>
+                    <p><strong>Preço:</strong> $80</p>
+                    <button class="botao-comprar">Comprar</button> 
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="destino-item">
+                <img src="img/recife.jpg" alt="Recife" class="destino-imagem">
+                <div class="destino-info">
+                    <h3>Recife, PE</h3>
+                    <p><strong>Preço:</strong> $90</p>
+                    <button class="botao-comprar">Comprar</button> 
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="destino-item">
+                <img src="img/fortaleza.jpg" alt="Fortaleza" class="destino-imagem">
+                <div class="destino-info">
+                    <h3>Fortaleza, CE</h3>
+                    <p><strong>Preço:</strong> $100</p>
+                    <button class="botao-comprar">Comprar</button> 
+                </div>
+            </div>
+        </li>
+    </ul>
+</section>
+
+<!-- Rodapé -->
+<footer>
+    <section>
+        <h3>Contato:</h3>
+        <p>Email: reisen@agenciadeviagens.com</p>
+        <p>Telefone: +55 11912345678</p>
+    </section>
+    <section>
+        <h3>Siga nossa agência nas redes sociais!</h3>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </section>
+</footer>
+
+</body>
+</html>

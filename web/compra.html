@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra - Reisen</title>
+    <link rel="stylesheet" href="css/estilo.css"> 
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <main>
+        <div class="login-form">
+            <h2>Detalhes da Compra</h2>
+            <form id="compraForm">
+                <div class="highlight-container">
+                    <div class="highlight-item">
+                        <label for="destino">Destino:</label>
+                        <span id="destino" class="highlight"></span>
+                    </div>
+                    <div class="highlight-item">
+                        <label for="preco">Preço:</label>
+                        <span id="preco" class="highlight"></span>
+                    </div>
+                </div>
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <label for="metodoPagamento">Método de Pagamento:</label>
+                <select id="metodoPagamento" name="metodoPagamento" required>
+                    <option value="">Selecione...</option>
+                    <option value="cartao">Cartão de Crédito</option>
+                    <option value="cartao">Cartão de Débito</option>
+                    <option value="pix">PIX</option>
+                </select>
+
+                <div id="dadosPagamento" style="display: none;">
+                    <label for="numeroCartao">Número do Cartão:</label>
+                    <input type="text" id="numeroCartao" name="numeroCartao">
+
+                    <label for="nomeTitular">Nome do Titular:</label>
+                    <input type="text" id="nomeTitular" name="nomeTitular">
+
+                    <label for="validadeCartao">Validade do Cartão:</label>
+                    <input type="text" id="validadeCartao" name="validadeCartao" maxlength="7" placeholder="MM/AAAA" required>
+
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv">
+                </div>
+
+                <div id="chavePix" style="display: none;" class="campo-grupo">
+                    <label for="chavePixLabel">Chave PIX:</label>
+                    <input type="text" id="chavePixLabel" readonly>
+                    <button type="button" id="copiarChavePix">Copiar</button>
+                </div>
+
+
+                <button type="submit">Confirmar Compra</button>
+            </form>
+        </div>
+    </main>
+
+    <script>
+      document.getElementById('destino').textContent = localStorage.getItem('destino');
+        document.getElementById('preco').textContent = localStorage.getItem('preco');
+
+        document.getElementById('metodoPagamento').addEventListener('change', function() {
+            var metodoPagamento = this.value;
+            var dadosPagamento = document.getElementById('dadosPagamento');
+            var chavePix = document.getElementById('chavePix');
+            if (metodoPagamento === 'pix') {
+                dadosPagamento.style.display = 'none';
+                chavePix.style.display = 'block';
+                document.getElementById('chavePixLabel').value = gerarChavePIX();
+            } else {
+                dadosPagamento.style.display = 'block';
+                chavePix.style.display = 'none';
+            }
+        });
+
+        document.getElementById('copiarChavePix').addEventListener('click', function() {
+            var chavePixLabel = document.getElementById('chavePixLabel');
+            chavePixLabel.select();
+            document.execCommand('copy');
+            alert('Chave PIX copiada para a área de transferência!');
+        });
+
+        document.getElementById('compraForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var metodoPagamento = document.getElementById('metodoPagamento').value;
+            if (metodoPagamento === 'pix') {
+                alert('Compra confirmada! Chave PIX: ' + document.getElementById('chavePixLabel').value);
+            } else {
+                alert('Compra confirmada!');
+            }
+        });
+
+        function gerarChavePIX() {
+            const caracteresPermitidos = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            const comprimentoChave = 20;
+            let chavePIX = '';
+
+            for (let i = 0; i < comprimentoChave; i++) {
+                chavePIX += caracteresPermitidos.charAt(Math.floor(Math.random() * caracteresPermitidos.length));
+            }
+
+            return chavePIX;
+        }
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
